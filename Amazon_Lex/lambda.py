@@ -7,7 +7,7 @@ import time
 
 def validate(slots):
 
-    valid_cities = ['mumbai','delhi','banglore','hyderabad']
+    valid_cities = ['Brampton','Toronto','Waterloo','Missisuaga']
     
     if not slots['Location']:
         print("Inside Empty Location")
@@ -33,16 +33,16 @@ def validate(slots):
         'violatedSlot': 'CheckInDate',
     }
         
-    if not slots['Nights']:
+    if not slots['Days']:
         return {
         'isValid': False,
-        'violatedSlot': 'Nights'
+        'violatedSlot': 'Days'
     }
         
-    if not slots['RoomType']:
+    if not slots['Name']:
         return {
         'isValid': False,
-        'violatedSlot': 'RoomType'
+        'violatedSlot': 'Name'
     }
 
     return {'isValid': True}
