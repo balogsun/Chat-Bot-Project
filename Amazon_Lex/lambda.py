@@ -7,7 +7,7 @@ import time
 
 def validate(slots):
 
-    valid_cities = ['Brampton','Toronto','Waterloo','Missisuaga']
+    valid_cities = ['toronto','brampton','missisuaga','waterloo']
     
     if not slots['Location']:
         print("Inside Empty Location")
@@ -134,7 +134,7 @@ def lambda_handler(event, context):
         "messages": [
             {
                 "contentType": "PlainText",
-                "content": "Thanks, I have placed your reservation"
+                "content": "Correct, Everything don set now"
             }
         ]
     }
